@@ -60,7 +60,7 @@ starwars %>% select(name,height)
 
 ☣️ ## Part 3: Transform data with dplyr and finding insight the data
 
- แสดงประเภทของหนังสือว่ามีอะไรบ้างและแต่ละประเภทมีจำนวนเท่าไหร่
+ ⚔️ ## แสดงประเภทของหนังสือว่ามีอะไรบ้างและแต่ละประเภทมีจำนวนเท่าไหร่
 
 ```
 book %>% group_by(Type) %>% count()
