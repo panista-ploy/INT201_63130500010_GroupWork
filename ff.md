@@ -13,6 +13,7 @@
 
 ------------------------------------------
 
+
 ☣️ ## Part 1: Explore the dataset
 
 ```
@@ -43,6 +44,8 @@ $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14
 
 ```
 
+------------------------------------------
+
 
 ☣️ ## Part 2: Learning function from Tidyverse
 
@@ -52,6 +55,8 @@ $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14
 starwars %>% select(name,height)
 ```
 ** You can sepearate this part or combine in part of `Transform data with dplyr and finding insight the data`
+
+------------------------------------------
 
 ☣️ ## Part 3: Transform data with dplyr and finding insight the data
 
