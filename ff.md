@@ -1,12 +1,9 @@
 # R-Assignment 4
 
-**Created by Name-Surname (ID: xxxxxxxxxx)**
+**Created by Name-Surname (ID: 631305500010)**
 
 Choose Dataset:
 1. Top 270 Computer Science / Programing Books (Data from Thomas Konstantin, [Kaggle](https://www.kaggle.com/thomaskonstantin/top-270-rated-computer-science-programing-books)) >> [Using CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/prog_book.csv)
-
-2. Superstore Sales Dataset (Data from Rohit Sahoo,[Kaggle](https://www.kaggle.com/rohitsahoo/sales-forecasting)) >> [Using CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/superstore_sales.csv)
-
 
 ### Outlines
 1. Explore the dataset
@@ -56,16 +53,25 @@ starwars %>% select(name,height)
 
 ## Part 3: Transform data with dplyr and finding insight the data
 
-//Explain here
+🐔 แสดงประเภทของหนังสือว่ามีอะไรบ้างและแต่ละประเภทมีจำนวนเท่าไหร่
 
 ```
-#Code here
+book %>% group_by(Type) %>% count()
+
 ```
 
 Result:
 
 ```
-#Copy Result from console to here
+ Type                      n
+  <chr>                 <int>
+1 Boxed Set - Hardcover     1
+2 ebook                     7
+3 Hardcover                95
+4 Kindle Edition           10
+5 Paperback               156
+6 Unknown Binding           2
+
 ```
 //Explain
 
