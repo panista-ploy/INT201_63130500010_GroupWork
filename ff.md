@@ -2,7 +2,7 @@
 
 **Created by Name-Surname (ID: 631305500010)**
 
-Choose Dataset:
+♨️ Choose Dataset:
 1. Top 270 Computer Science / Programing Books (Data from Thomas Konstantin, [Kaggle](https://www.kaggle.com/thomaskonstantin/top-270-rated-computer-science-programing-books)) >> [Using CSV](https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/prog_book.csv)
 
 ### Outlines
@@ -11,7 +11,7 @@ Choose Dataset:
 3. Transform data with dplyr and finding insight the data
 4. Visualization with GGplot2
 
-## Part 1: Explore the dataset
+☣️ ## Part 1: Explore the dataset
 
 ```
 # Library
@@ -42,7 +42,7 @@ $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14
 ```
 
 
-## Part 2: Learning function from Tidyverse
+☣️ ## Part 2: Learning function from Tidyverse
 
 - Function `select()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for select columns
 
@@ -51,9 +51,9 @@ starwars %>% select(name,height)
 ```
 ** You can sepearate this part or combine in part of `Transform data with dplyr and finding insight the data`
 
-## Part 3: Transform data with dplyr and finding insight the data
+☣️ ## Part 3: Transform data with dplyr and finding insight the data
 
-🐔 แสดงประเภทของหนังสือว่ามีอะไรบ้างและแต่ละประเภทมีจำนวนเท่าไหร่
+ แสดงประเภทของหนังสือว่ามีอะไรบ้างและแต่ละประเภทมีจำนวนเท่าไหร่
 
 ```
 book %>% group_by(Type) %>% count()
