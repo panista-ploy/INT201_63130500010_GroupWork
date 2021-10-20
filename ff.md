@@ -229,19 +229,27 @@ Explain
 <br>
 
 ## 🚪 Part 4: Visualization with GGplot2
-### 1.) Graph show relation between height and mass
+### 1.) Graph show type of book
 ```
-scat_plot <- starwars %>% filter(mass<500) %>% ggplot(aes(x=height,y=mass))+
-  geom_point(aes(color=gender))
-
-scat_plot+geom_smooth()
+type_plot <- ggplot(book,aes(x=Type))+ geom_bar() + ggtitle("Type of book") 
+type_plot
 ```
-Result:
+Result
 
 ![Graph 1](graph1.png)
 
-**Guideline:
-Embed Image by using this syntax in markdown file
-````
-![Name](imageFile)
-````
+### 2.) Graph show relation Reviews < 500
+```
+review_plot <-book %>% 
+  filter(Reviews <= 500 ) %>% 
+  ggplot(aes(x=Rating,y=Reviews))
+  + geom_point(aes(color=Type)) 
+  + ggtitle("relation Rating and Reviews")
+  + geom_smooth()
+review_plot 
+```
+Result
+
+![Graph 1](graph1.png)
+
+
