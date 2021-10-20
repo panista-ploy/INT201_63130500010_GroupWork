@@ -236,7 +236,7 @@ type_plot
 ```
 Result
 
-![Graph 1](graph1.png)
+![Graph 1](type.png)
 
 ### 2.) Graph show relation Reviews < 500
 ```
@@ -250,6 +250,6 @@ review_plot
 ```
 Result
 
-![Graph 1](graph1.png)
+![Graph 1](reviews.png)
 
 
