@@ -30,7 +30,7 @@ book <- read_csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/
 glimpse(book)
 ```
 
-In this dataset has column 
+In this dataset holds a list of 270 books in the field of computer science and programming related topics. Inside that dataset, you will find general information about the book including the number of pages in the book, the book types, the book descriptions, and the book prices. Inside that dataset has 270 rows 7 column
 - Rating (numeric) เรตติ้งของหนังสือว่ามีความนิยมมากแค่ไหน
 - Reviews (numeric) คะแนนรีวิวของหนังสือว่ามีความนิยมมากแค่ไหน
 - Book_title (character) ชื่อของหนังสือ
