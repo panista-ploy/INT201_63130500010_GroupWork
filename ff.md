@@ -30,15 +30,17 @@ book <- read_csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/
 glimpse(book)
 ```
 
-In this dataset holds a list of 270 books in the field of computer science and programming related topics. Inside that dataset, you will find general information about the book including the number of pages in the book, the book types, the book descriptions, and the book prices. Inside that dataset has 270 rows 7 column
-- Rating (numeric) เรตติ้งของหนังสือว่ามีความนิยมมากแค่ไหน
-- Reviews (numeric) คะแนนรีวิวของหนังสือว่ามีความนิยมมากแค่ไหน
-- Book_title (character) ชื่อของหนังสือ
-- Description (character) คำอธิบายของหนังสือ
-- Number_Of_Pages (numeric) จำนวนหน้าของหนังสือเล่มนั้นๆ
-- Type (character) ประเภทของหนังสือ เช่น หนังสือปกอ่อน หนังสือปกแข็ง
-- Price (numeric) ราคาของหนังสือเล่มนั้นๆ
- 
+📌 In this dataset holds a list of 270 books in the field of computer science and programming related topics. Inside that dataset, you will find general information about the book including the number of pages in the book, the book types, the book descriptions, and the book prices. Inside that dataset has 270 rows 7 column
+| column | Data Type | Description |
+| ---- | ---- | ---- |
+| Rating | numeric | เรตติ้งของหนังสือว่ามีความนิยมมากแค่ไหน
+| Reviews | numeric | เรตติ้งของหนังสือว่ามีความนิยมมากแค่ไหน
+| Book_title | character | ชื่อของหนังสือ
+| Description | character | คำอธิบายของหนังสือ
+| Number_Of_Pages | numeric | จำนวนหน้าของหนังสือเล่มนั้นๆ
+| Type | character | ประเภทของหนังสือ เช่น หนังสือปกอ่อน หนังสือปกแข็ง
+| Price | numeric  | ราคาของหนังสือเล่มนั้นๆ
+
 ```
 Rows: 271
 Columns: 7
@@ -49,6 +51,21 @@ $ Description     <chr> "This style manual offers practical advice on improving 
 $ Number_Of_Pages <dbl> 105, 527, 50, 393, 305, 288, 256, 368, 259, 128, 352, 352, 200, 328, 240, 2~
 $ Type            <chr> "Hardcover", "Hardcover", "Kindle Edition", "Hardcover", "Kindle Edition", ~
 $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14.188235, 14.232353,~
+```
+### 💡 สำรวจข้อมูลเบื้องต้น
+```
+summary(book)
+```
+
+Result
+```
+     Rating          Reviews           Book_title          Description      Number_Of_Pages         Type                 Price   
+ Min.   :3.000    Min.   :   0.0    Length:271          Length:271          Min.   :  50.0      Length:271          Min.   :  9.324  
+ 1st Qu.:3.915    1st Qu.:   5.5    Class :character    Class :character    1st Qu.: 289.0      Class :character    1st Qu.: 30.751  
+ Median :4.100    Median :  35.0    Mode  :character    Mode  :character    Median : 384.0      Mode  :character    Median : 46.318  
+ Mean   :4.067    Mean   : 185.6                                            Mean   : 475.1                          Mean   : 54.542  
+ 3rd Qu.:4.250    3rd Qu.: 116.5                                            3rd Qu.: 572.5                          3rd Qu.: 67.854 
+ Max.   :5.000    Max.   :5938.0                                            Max.   :3168.0                          Max.   :235.650  
 ```
 
 ---
@@ -61,13 +78,11 @@ $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14
 ```
 book %>% arrange(Rating)
 ```
-** You can sepearate this part or combine in part of `Transform data with dplyr and finding insight the data`
 
 ---
 <br>
 
 ## 🚪 Part 3: Transform data with dplyr and finding insight the data
-
 <br>
 
 ⚔️ 1.) แสดงประเภทของหนังสือว่ามีอะไรบ้างและแต่ละประเภทมีจำนวนเท่าไหร่  
