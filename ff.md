@@ -34,7 +34,7 @@ glimpse(book)
 | column | Data Type | Description |
 | ---- | ---- | ---- |
 | Rating | numeric | เรตติ้งของหนังสือว่ามีความนิยมมากแค่ไหน
-| Reviews | numeric | เรตติ้งของหนังสือว่ามีความนิยมมากแค่ไหน
+| Reviews | numeric | แสดงจำนวนบทวิจารณ์ที่พบในหนังสือเล่มนี้
 | Book_title | character | ชื่อของหนังสือ
 | Description | character | คำอธิบายของหนังสือ
 | Number_Of_Pages | numeric | จำนวนหน้าของหนังสือเล่มนั้นๆ
