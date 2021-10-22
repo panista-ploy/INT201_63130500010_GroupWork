@@ -1,3 +1,4 @@
+
 # Explore the dataset
 ------------------------
 # Library
@@ -58,3 +59,4 @@ review_plot <-book %>%
   + ggtitle("relation Rating and Reviews")
   + geom_smooth()
 review_plot 
+
